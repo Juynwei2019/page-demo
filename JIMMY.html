@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML practice</title>
+		<meta charset="utf-8">
+		<script src="./js/jquery-3.6.0.min.js"></script>
+		<script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+		<style type = "text/css">
+			p.p1 {
+				  color: rgb(153, 66, 66);
+				  text-align: center;
+				}
+			h1{
+				color: darkgreen;
+			} 
+		</style>
+	</head>
+
+	<body>
+		<!-- 主要內容 -->
+		<main>
+			<h1>This is a heading</h1>
+			<p id="p1">This is a paragraph.</p>
+		</main>
+		<form>
+			Name：<input type="text" name ="username"><br>
+			address：<input type="text" name ="address"><br>
+			密碼：<input type="password" name ="pwd" placeholder="至少八個字元"><br>
+			<input type="submit" >
+			<input type="reset" >
+			<input type="button" id="tt" value="HI" >
+		</form>
+		<!-- 頁尾 -->
+		<div class="container-fluid">
+			<h1>My First Bootstrap Page</h1>
+			<p>This part is inside a .container-fluid class.</p>
+			<p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>           
+		</div>
+
+		<!--jquery 練習-->
+		<script>
+			$(document).ready(function(){
+					$("input:button").click(function(){
+						//$("#p1").hide(1000);
+						$("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+
+					});
+				});
+		</script>
+	</body>
+</html>
